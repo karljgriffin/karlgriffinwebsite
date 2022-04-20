@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+<div>
+<div style="text-align: center;"> 
+<div class="writingbox">
+<img class="img" src="https://media-exp1.licdn.com/dms/image/C4D03AQEdSOIWbyhNgw/profile-displayphoto-shrink_200_200/0/1612265328812?e=1652313600&v=beta&t=CFnVcUmxJ6ejNu39Clr7Fgur_KTi4Uh0gPKSmRJdvcw">        
+<div class="wrapper">
+<div class="typing-demo">
+<h1>Hi, I'm <em>Karl Griffin!</em></h1>
+</div>
+</div>      
+<h3>Chemistry PhD Student, Coder, Interested in Working at the Intersection of Science & Tech
+</h3>
+<br>       
+<p>
+Hi, I am 26 years old and I am currently in third year of a chemistry PhD at University College Dublin. I completed my undergraduate degree here in 2019, and aim to complete my PhD by January 2023.
+</p> 
+<p>
+My research is interdisciplinary and involves the study of organic nanomaterials and their applications in neuromorphic or 'brain-inpsired' computing. See 'Education' for more details.
+</p> 
+<p>
+I also have a keen interest in computer programming which I began teaching myself at the beginning of my PhD. I enjoy coding in my spare time as well as taking every available opportunity to implement it in my research. I have experience using Python, postgreSQL, as well as web development using HTML, CSS and Flask. See 'Skills' for further elaboration.
+</p>
+<br>
+<button class="button button1" type="submit" onclick="window.open('{{url_for('static',filename='KGCV.pdf')}}')">
+View my CV
+</button>
+</div>  
+</div>   
+</div>
+
+{% endblock %}

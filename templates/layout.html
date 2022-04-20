@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">   
+<link type="text/css" href="{{url_for('static', filename='style.css')}}" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content 
+*/
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+      }
+    }
+  }
+}   
+</script>
+    
+<title>Karl Griffin {% block title %}{% endblock %}</title>
+</head>  
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/education">Education</a></li>
+<li><a href="/skills">Skills</a></li>
+<li><a href="/sport">Sport</a></li>
+</ul>
+</nav>
+</header>
+    
+{% block main %}{% endblock %}
+
+<footer class='footer'>
+<div>
+<h6 class="h6">Connect</h6>
+<p>
+If you are interested in my work, please feel free to check out my profiles below or get in touch via email.
+</p>
+<section>
+<a href="https://ie.linkedin.com/in/karl-griffin-b9583818b" target="_blank" role="button" class="fa-2x"><i class="fa fa-linkedin text" style="background-color: #0077b5;"></i>
+</a>  
+<a href="https://github.com/karljgriffin" target="_blank" role="button" class="fa-2x"><i class="fa fa-github" style="background-color:black;"></i>
+</a>      
+<a href="mailto:karl.griffin@ucdconnect.ie" role="button" class="fa-2x"><i class="fa fa-envelope" style="background-color:red;"></i>
+</a>       
+</section>
+<br>
+</div>
+<div>
+<a href="#" id=para1>Back to top</a>
+<br>
+</div>  
+</footer>
+</body>
+</html>

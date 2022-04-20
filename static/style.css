@@ -1,0 +1,382 @@
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0px;
+background-color: #1A1A1D;
+color: white;
+font-family: sans-serif;
+letter-spacing: 2px;
+font-weight: 400;
+font-size: 13px;
+}  
+
+header {
+height: 50px;
+background-color: #950740;
+overflow: hidden;
+}
+
+nav {
+float: left;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #950740;
+margin-bottom:0;
+font-size: 13px;
+}
+
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color: #111;
+}
+
+.paddingtop {
+padding-top: 0px;
+}
+    
+.header-container {
+text-align: center; 
+padding: 15px;
+}
+
+.img {
+margin-top: 15px;
+width:200px;
+border-radius:50px;
+margin-right:10px;
+}
+    
+em {
+color:#C3073F;
+font-style:normal;
+}
+   
+a {
+color: inherit;
+text-decoration: none;
+}
+a i:hover {
+opacity: 50%;
+}
+
+
+footer {
+background-color: #950740;
+text-align: center;
+color: white;
+margin-bottom: 0px;
+margin-top: 0px;
+padding-bottom: 25px;
+}
+
+#para1 {
+  color: blue;
+}
+
+h6 {
+margin-top: 50px;
+margin-bottom: 7.5px;
+padding-top: 25px;
+padding-bottom: 0px;
+color: white;
+font-size: 13px;
+}
+h7 {
+padding-top: 25px;
+padding-bottom: 25px;
+color: white; 
+}
+
+/* CV button */
+.button {
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 4px 2px;
+cursor: pointer;
+}
+.button1 {
+background-color: #4CAF50;
+} /* Green */  
+/* Dropdown button on hover & focus */
+.button:hover, .button:focus {
+background-color:red;
+}
+
+/* div padding */
+.writingbox {
+padding-top: 0px;
+padding-right: 40px;
+padding-bottom: 0px;
+padding-left: 40px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 13px;
+border: none;
+cursor: pointer;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+background-color:red;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+bottom:100%;
+background-color:black;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+color:red;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ddd
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+display:block;
+}
+
+/* image gallery stuff */
+div.gallery {
+margin: 15px;
+border: 1px solid #ccc;
+float:inherit;
+width: 180px;
+display: inline-block;
+}
+div.gallery:hover {
+border: 1px solid #777;
+}
+div.gallery img {
+width: 100%;
+height:inherit;
+}
+div.desc {
+padding: 15px;
+text-align: center;
+}
+.gallerycontainer {
+display: flex;
+justify-content: center;
+}
+
+/* border for text */
+p.solid {
+border: 3px #C0C0C0;
+padding: 30px;
+margin: 5px;
+}
+
+div.scroll {
+background-color: #4E4E50;
+height: 450px;
+overflow-x: hidden;
+overflow-y: auto;
+color:white;
+}
+
+/* typing demo */
+.wrapper {
+/*This part is important for centering*/
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.typing-demo {
+width: 42ch;
+animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+white-space: nowrap;
+overflow: hidden;
+border-right: 3px solid;
+font-size: 14px;
+}
+@keyframes typing {
+  from {
+width: 0
+  }
+}  
+@keyframes blink {
+  50% {
+border-color: transparent
+  }
+}
+
+section table {
+margin: auto;
+}
+section table h5 {
+padding: 20px;
+}
+section table tr:hover td {
+background-color: #f7fff5;
+}
+.container1 {
+background-color: #C3073F;
+padding: 20px;
+width: 90%;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 20px;
+color: white;
+box-shadow: 1px 1px black;
+}
+.table-holder {
+overflow-y: auto;
+height: 500px;
+border-radius: 18px;
+border: 1px solid black;
+background-color: #6F2232;;
+padding: 10px;
+}
+.table-holder2 {
+overflow-y: auto;
+height: 350px;
+border-radius: 18px;
+border: 1px solid black;
+background-color: #6F2232;;
+padding: 10px;
+}
+.center {
+text-align: left;
+}
+
+.row {
+  margin-left:10px;
+  margin-right:10px;
+}
+.column {
+width: 100%;
+padding: 5px;
+}
+
+* {
+box-sizing: border-box;
+}
+/* Clearfix (clear floats) */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+table {
+font-size: 13px;
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+border: 1px solid #ddd;
+}
+th, td {
+text-align: left;
+padding: 16px;
+width: 50%;
+}
+tr {
+background-color: #666666;
+}  
+
+
+
+
+@media only screen and (min-width: 768px) {
+body {
+margin: 0px;
+background-color: #1A1A1D;
+color: white;
+font-family: sans-serif;
+letter-spacing: 2px;
+font-weight: 400;
+font-size: 20px;
+}   
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #950740;
+margin-bottom:0;
+font-size: 20px;
+}
+.column {
+float: left;
+width: 50%;
+padding: 5px;
+}
+table {
+font-size: 20px;
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+border: 1px solid #ddd;
+}
+.typing-demo {
+width: 42ch;
+animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+white-space: nowrap;
+overflow: hidden;
+border-right: 3px solid;
+font-size: 22.5px;
+}
+h6 {
+margin-top: 50px;
+margin-bottom: 7.5px;
+padding-top: 25px;
+padding-bottom: 0px;
+color: white;
+font-size: 20px;
+}
+    /* Dropdown Button */
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 22.5px;
+border: none;
+cursor: pointer;
+}
+a img:hover {
+transform: scale(3);
+}
+.center {
+text-align: center;
+}   
+}   
