@@ -5,7 +5,6 @@
 
 import csv
 
-
 class CreditCard:
 
     allcards = []
@@ -36,48 +35,16 @@ class CreditCard:
             print("Card number is not correct length...")
 
         if firstcriteria:
-            odddigits = numbers[0::2]
-            odddigitsint = [int(x) for x in odddigits]
-            doublevalue = [x*2 for x in odddigitsint]
-            print(f"After doubling the odd digits: {doublevalue}")
-            evendigits = numbers[1::2]
-            evendigitsint = [int(x) for x in evendigits]
+            lst = [int(x)*2 if i % 2 == 0 else int(x) for i, x in enumerate(numbers)]
+            lst_str = [str(x) for x in lst]
+            lst_final = [(int(lst_str[i][0]) + int(lst_str[i][1])) if int(lst_str[i]) > 9 else int(lst_str[i]) for i, x in enumerate(lst_str)]
+            final_sum = sum(lst_final)
 
-        lst = []
-        for value in doublevalue:
-            if value > 9:
-                sum = 0
-                for digit in str(value):
-                    sum += int(digit)
-                lst.append(sum)
-        print(
-            f"The list containing product of nums > 9 following doubling: {lst}")
+        print("Final sum:", final_sum)
 
-        final = []
-        doublevalueammended = []
-        count = 0
-        for i in doublevalue:
-            if i > 9:
-                doublevalueammended.append(lst[count])
-                count += 1
-            else:
-                doublevalueammended.append(i)
-
-        for i in range(0, 8):
-            final.append(doublevalueammended[i])
-            final.append(evendigitsint[i])
-        print(f"This is the final list: {final}")
-
-        finalsum = 0
-        for integerr in final:
-            finalsum += integerr
-        print("Final sum:", finalsum)
-
-        strfinalsum = str(finalsum)
-        if len(strfinalsum) == 2 and strfinalsum[1] == '0':
-            print("Valid card!")
-        else:
-            print("Invalid card...")
+        str_final_sum = str(final_sum)
+        print("Valid card!" if len(str_final_sum) ==
+              2 and str_final_sum[-1] == '0' else "Invalid card...")
 
     def __repr__(self):
         return f"CreditCard('{self.nums}')"
