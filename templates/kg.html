@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+<div>
+<div style="text-align: center;"> 
+<div class="writingbox">
+<img class="img" src="{{url_for('static',filename='profiler.jpg')}}">        
+<div class="wrapper">
+<div class="typing-demo">
+<h1>Hi, I'm <em>Karl Griffin!</em></h1>
+</div>
+</div>      
+<h3>Software Engineer @ IBM
+</h3>
+<br>       
+<p>
+I am currently working in IBM as a software engineer on the multi-cloud SaaS platform (MCSP) team, gaining invaluable experience in Golang, Docker, Kubernetes and cloud computing. 
+</p> 
+<p>
+Previously, as an IRC-funded Chemistry PhD Student, I was dedicated to developing organic memristive nanowire devices for neuromorphic computing, with three first-author papers published in top scientific journals. It was during this time that I developed a keen interest in programming and gained experience in Python and SQL.
+</p> 
+<p>
+I am also a former professional Track and Field athlete, having represented Ireland on the global stage over 800 metres from 2010 - 2019.
+</p>
+<br>
+<button class="button button1" type="submit" onclick="window.open('{{url_for('static',filename='kg_cv.pdf')}}')">
+View my CV
+</button>
+</div>  
+</div>   
+</div>
+
+{% endblock %}
